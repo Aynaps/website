@@ -75,6 +75,7 @@
 
   .card-container {
     display: flex;
+    //flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 16px;
@@ -152,10 +153,24 @@
   a:hover {
     color: #1976d2;
     text-decoration: none;
+
+  }
+
+
+  .logo{
+    position: absolute;
+    top: 10px;
+    right: 0px;
+
+  }
+  .logo:hover{
+    transform: translateY(-3px);
+    transition: 0.2s ease-in-out; 
   }
 
   a:hover {
     color: #125699;
+
   }
 
   .terminal {
@@ -211,17 +226,6 @@
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   }
 
-  footer {
-    margin-top: 8px;
-    display: flex;
-    align-items: center;
-    line-height: 20px;
-  }
-
-  footer a {
-    display: flex;
-    align-items: center;
-  }
 
   .github-star-badge {
     color: #24292e;
