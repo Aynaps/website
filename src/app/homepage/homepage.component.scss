@@ -1,12 +1,11 @@
-
-    .content {
-        display: flex;
-        margin: 82px auto 32px;
-        padding: 0 16px;
-        max-width: 1000px;
-        flex-direction: column;
-        align-items: center;
-    }
+  // .content {
+  //   display: flex;
+  //   margin: 82px auto 32px;
+  //   padding: 0 16px;
+  //   max-width: 1000px;
+  //   flex-direction: column;
+  //   align-items: center;
+  // }
   .TopResumeContainer{
     display: flex;
     flex-direction: row;
@@ -61,3 +60,7 @@
     color: #1976d2;
     text-decoration: none;
   }
+
+
+  @import "../app.component.scss";
+  @include auth;

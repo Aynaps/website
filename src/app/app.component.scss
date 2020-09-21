@@ -33,7 +33,15 @@
   .dummyWelcome{
     padding-left: 20px;
   }
-  
+  .content {
+    display: flex;
+    margin: 82px auto 32px;
+    padding: 0 16px;
+    max-width: 1000px;
+    flex-direction: column;
+    align-items: center;
+  }
+
   h1,
   h2,
   h3,
@@ -174,7 +182,18 @@
     width: 1920px;
   }
 
-
+  @mixin auth {
+    :host{
+      .content {
+        display: flex;
+        margin: 82px auto 32px;
+        padding: 0 16px;
+        max-width: 1000px;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
   /* Responsive Styles */
   @media screen and (max-width: 767px) {
 
