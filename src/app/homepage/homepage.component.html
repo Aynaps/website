@@ -1,0 +1,75 @@
+  <div class="content" role="main">
+    <h1>My Projects</h1>
+    <div class="AllProjects">
+      <a class="card">
+        <p>CovidApp</p>
+      </a>
+      <a class="card">
+        <span>This Website</span>
+      </a>
+      <a class="card">
+        <span>Firework-Simulation</span>
+      </a>
+      <a class="card">
+        <span>Python-Web-App: In Prog</span>
+      </a>
+  
+    </div>
+  </div>
+  
+  <div class="resume">
+    <div class="TopResumeContainer">
+      <h1 style="padding-left: 39%;">Resume</h1>
+        <div class="PepeContainer" style="padding-left: 40px;">
+        
+          <button (click)="jammerTime()">Time to Jam (Headphone warning)</button>
+  
+          
+          <ng-container *ngIf="showPepeStand">
+            <img src="{{srcPepeStand}}" width="250" height="250"/>
+  
+            <audio src="../assets/One More Time.mp3" id="song"></audio>
+  
+          </ng-container>
+  
+          <ng-container *ngIf="showPepeDance">
+            <img [src]= srcPepeDance>
+          </ng-container>
+  
+        </div>  
+    </div>
+  
+    <div class="experiencePart">
+      <h2 style="font-size: 200%;">
+        Experience
+        <div class="innerExperience" style="font-size: 75%;">
+          <p style="padding-left: 25px;">Company: DGL Tech</p>
+          <p style="padding-inline-start: 50px;">Title: Software Engineer Intern (06/20-curr)</p>
+          <ul style="padding-inline-start: 75px;">
+            <li>Developed modern E-Commerce website alongside project lead using the angular framework for company so clients can buy products digitally. Set to launch end of internship.</li>
+            <li>FrameWork: AngularJS</li>
+            <li>Languages: HTML/SCSS, Go</li>
+          </ul>
+  
+        </div>
+      </h2>
+    </div>
+    <div class="educationPart">
+      <h2 style="font-size: 200%;">
+        Education
+        <p style="padding-left: 25px; font-size: 75%;">University of Illinois at Chicago</p>
+      <p style="padding-left: 50px; font-size: 75%;" > -Bachelor's In Computer Science</p>
+      <p style="padding-left: 50px; font-size: 75%;" >- GPA: 3.2/4</p>
+      <p style="padding-left: 50px; font-size: 75%;"> - Course's Taken: Data Structures, Software Design, Program Design 1,2 , Programming Practicum, Machine Organization,
+         Algorithms, Programming Language Concepts, Database Systems, Android Development, Software Engineering. Y'know the usual.</p>
+      </h2>
+    </div>
+    <div class="skillsPart">
+      <h2 style="font-size: 200%;">Skills</h2>
+      <ul>
+        <li style="font-size: 175%; color: red;">Proficient: Java</li>
+        <li style="font-size: 175%; color: green;">Intermediate: HTML/SCSS, AngularJS</li>
+        <li style="font-size: 175%; color: blue;">Advanced Beginner: Python, JavaScript</li>
+      </ul>
+    </div>
+  </div>
