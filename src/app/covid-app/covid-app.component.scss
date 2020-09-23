@@ -1,2 +1,7 @@
 @import "../app.component.scss";
 @include auth;
+
+.androidApp{
+    display: flex;
+    flex-direction: row wrap;
+}
