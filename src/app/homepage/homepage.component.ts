@@ -11,8 +11,8 @@ export class HomepageComponent implements OnInit {
   public showPepeDance:boolean = false;
   public showPepeStand:boolean = true;
   
-  public srcPepeDance:String = "../assets/pepeDance.gif";
-  public srcPepeStand:String = "../assets/Sad-Pepe-The-Frog-Transparent-Background.png";
+  public srcPepeDance:String = "./assets/pepeDance.gif";
+  public srcPepeStand:String = "./assets/Sad-Pepe-The-Frog-Transparent-Background.png";
   public song = new Audio();
   public isSongPlaying = false;
 
@@ -22,7 +22,7 @@ export class HomepageComponent implements OnInit {
   jammerTime(){
     this.showPepeDance = !this.showPepeDance;
     this.showPepeStand = !this.showPepeStand;
-    this.song.src = "../assets/One More Time.mp3";
+    this.song.src = "./assets/One More Time.mp3";
     this.playAudio();
   }
 
